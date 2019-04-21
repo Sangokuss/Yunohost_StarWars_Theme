@@ -10,16 +10,23 @@
 ===============================================================================
 */
 
-/*
- * Monkeypatch init_portal to customize the app tile style
- *
+var app_tile_colors = ['redbg','purpledarkbg','darkbluebg','orangebg','greenbg', 'yellowbg','lightpinkbg','pinkbg','turquoisebg','lightbluebg', 'bluebg'];
+
+function set_app_tile_style(el)
+{
+    // Select a color value from the App label
+    randomColorNumber = parseInt(el.textContent, 36) % app_tile_colors.length;
+    // Add color class.
+    el.classList.add(app_tile_colors[randomColorNumber]);
+}
+
+// Monkeypatch init_portal to customize the app tile style
 init_portal_original = init_portal;
 init_portal = function()
 {
     init_portal_original();
-    // Some stuff here
+    Array.each(document.getElementsByClassName("app-tile"), set_app_tile_style);
 }
-*/
 
 /*
  * Monkey patching example to do custom stuff when loading inside an app

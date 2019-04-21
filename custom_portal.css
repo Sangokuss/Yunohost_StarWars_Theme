@@ -5,105 +5,175 @@
 ===============================================================================
 */
 
-/* ==========================================================================
-   Vaporwave theme
-   ========================================================================== */
-.ynh-user-portal {
-    min-height: 100vh;
-    background: rgb(205, 118, 255) !important;
-    background: -moz-linear-gradient(45deg, rgb(205, 118, 255) 0%, rgb(93, 150, 168) 100%) !important;
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgb(205, 118, 255)), color-stop(100%, rgb(93, 150, 168))) !important;
-    background: -webkit-linear-gradient(45deg, rgb(205, 118, 255) 0%, rgb(93, 150, 168) 100%) !important;
-    background: -o-linear-gradient(45deg, rgb(205, 118, 255) 0%, rgb(93, 150, 168) 100%) !important;
-    background: -ms-linear-gradient(45deg, rgb(205, 118, 255) 0%, rgb(93, 150, 168) 100%) !important;
-    background: linear-gradient(45deg, rgb(205, 118, 255) 0%, rgb(93, 150, 168) 100%) !important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C82BFF', endColorstr='#0C76A8', GradientType=1) !important;
+body {
+   background-image: url("./fond.jpg");
 }
 
-.messages.danger { background: #c0392b80; }
-.messages.warning { background: #e67e2280; }
-.messages.success { background: #27ae6080; }
-.messages.info { background: #2980b980; }
+#ynh-logo {
+  background-image : url("./Falcon.png");
+}
 
-a, small, span,
-.ynh-wrapper.footer a,
+.login-form .form-group {
+  border: 1px solid #bbb;
+}
+
+.user-container,
 .user-menu a,
-.user-container.user-container-info span,
-input.btn.classic-btn.large-btn {
-    color: #e0e0e0 !important;
+.link-btn,
+.footer a {
+   color: #fff;
 }
 
-.form-group input::placeholder,
-.form-group input::-ms-input-placeholder,
-.form-group input:-ms-input-placeholder {
-    color: #f4f4f4 !important;
+.user-menu a:hover,
+.footer a:hover {
+   color: #whitegrey;
 }
 
-form.login-form input {
-    color: #222 !important;
+.form-text:disabled:hover {
+   background: #797b83;
 }
 
-a:hover,
-a:active,
-a:focus,
-.form-group input,
-input.btn.classic-btn.large-btn:hover,
-.ynh-wrapper.footer a:hover {
-    color: white !important;
+.link-btn,
+.link-btn:hover {
+   background: none;
 }
 
-.ynh-wrapper.footer a:before {
-    color: #cc45ee !important;
+
+.bluebg {
+    background: #3498DB!important;
+}
+.bluebg:hover:after,
+.bluebg:focus:after,
+.bluebg:hover:before,
+.bluebg:focus:before {
+    background: #16527A!important;
 }
 
-.ynh-wrapper.footer nav {
-    border-color: #cc45ee !important;
+.purplebg {
+    background: #9B59B6!important;
+}
+.purplebg:hover:after,
+.purplebg:focus:after,
+.purplebg:hover:before,
+.purplebg:focus:before {
+    background: #532C64!important;
 }
 
-.listing-apps li a span,
-.listing-apps li a:hover span,
-.listing-apps li a:active span,
-.listing-apps li a:focus span {
-    color: white !important;
+.redbg {
+    background: #E74C3C!important;
+}
+.redbg:hover:after,
+.redbg:focus:after,
+.redbg:hover:before,
+.redbg:focus:before {
+    background: #921E12!important;
 }
 
-.listing-apps li,
-.listing-apps li a {
-    transition: all 0.3s ease-in-out, background 0ms; /* fix gray flicker on initial load */
-    border: none transparent !important;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1),
-    -2px -2px 3px 0 rgba(0, 0, 0, 0.1) inset;
+.orangebg {
+    background: #F39C12!important;
+}
+.orangebg:hover:after,
+.orangebg:focus:after,
+.orangebg:hover:before,
+.orangebg:focus:before {
+    background: #7F5006!important;
 }
 
-.listing-apps li:hover,
-.listing-apps li a:hover {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0),
-    -2px -2px 3px 0 rgba(0, 0, 0, 0) inset;
+.greenbg {
+    background: #2ECC71!important;
+}
+.greenbg:hover:after,
+.greenbg:focus:after,
+.greenbg:hover:before,
+.greenbg:focus:before {
+    background: #176437!important;
 }
 
-.btn.large-btn.classic-btn,
-.btn.large-btn.validate-btn {
-    background: rgba(200, 200, 200, 0.4) !important;
+.darkbluebg {
+    background: #34495E!important;
+}
+.darkbluebg:hover:after,
+.darkbluebg:focus:after,
+.darkbluebg:hover:before,
+.darkbluebg:focus:before {
+    background: #07090C!important;
 }
 
-.btn.large-btn.classic-btn:hover,
-.btn.large-btn.validate-btn:hover {
-    background: rgba(255, 255, 255, 0.4) !important;
+.lightbluebg {
+    background: #6A93D4!important;
+}
+.lightbluebg:hover:after,
+.lightbluebg:focus:after,
+.lightbluebg:hover:before,
+.lightbluebg:focus:before {
+    background: #2B5394!important;
 }
 
-/* There are no colors, there is only vapor! */
-.app-tile,
-.form-group input,
-.form-group label,
-a.btn:hover,
-.btn.large-btn {
-    background: rgba(200, 200, 200, 0.2) !important;
-    border: none;
+.yellowbg {
+    background: #F1C40F!important;
+}
+.yellowbg:hover:after,
+.yellowbg:focus:after,
+.yellowbg:hover:before,
+.yellowbg:focus:before {
+    background: #796307!important;
 }
 
-.app-tile:hover:after,
-.app-tile:focus:after,
-.app-tile:hover:before,
-.app-tile:focus:before {
-    background: rgba(200, 200, 200, 0.4) !important;
+
+.lightpinkbg {
+    background: #F76F87!important;
+}
+.lightpinkbg:hover:after,
+.lightpinkbg:focus:after,
+.lightpinkbg:hover:before,
+.lightpinkbg:focus:before {
+    background: #DA0C31!important;
+}
+
+/* Following colors are not used yet */
+.pinkbg {
+    background: #D66D92!important;
+}
+.pinkbg:hover:after,
+.pinkbg:focus:after,
+.pinkbg:hover:before,
+.pinkbg:focus:before {
+    background: #992B52!important;
+}
+
+.turquoisebg {
+    background: #1ABC9C!important;
+}
+.turquoisebg:hover:after,
+.turquoisebg:focus:after,
+.turquoisebg:hover:before,
+.turquoisebg:focus:before {
+    background: #0B4C3F!important;
+}
+.lightyellow {
+    background: #FFC973!important;
+}
+.lightyellow:hover:after,
+.lightyellow:focus:after,
+.lightyellow:hover:before,
+.lightyellow:focus:before {
+    background: #F39500!important;
+}
+.lightgreen {
+    background: #B5F36D!important;
+}
+.lightgreen:hover:after,
+.lightgreen:focus:after,
+.lightgreen:hover:before,
+.lightgreen:focus:before {
+    background: #77CF11!important;
+}
+.purpledarkbg {
+    background: #8E44AD!important;
+}
+.purpledarkbg:hover:after,
+.purpledarkbg:focus:after,
+.purpledarkbg:hover:before,
+.purpledarkbg:focus:before {
+    background: #432051!important;
 }
